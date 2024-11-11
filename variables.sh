@@ -1,1 +1,2 @@
-echo " Hi today's timestamp is: $(date)"
+DATE = $(date)
+echo " Hi today's timestamp is: $DATE"
