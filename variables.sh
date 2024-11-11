@@ -1,0 +1,1 @@
+echo " Hi today's timestamp is: $(date)"
