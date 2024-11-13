@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Enter Today's Day:- "
 read TODAY
-if (today=="sunday") {
+if (TODAY=="sunday") {
     echo "Yo, Let's Chill!"
 
 else 
