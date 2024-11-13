@@ -4,6 +4,6 @@ read TODAY
 if (today=="sunday") {
     echo "Yo, Let's Chill!"
 }
-else{
+else {
     echo "Let's get back to work :("
 }
