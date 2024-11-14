@@ -2,13 +2,16 @@
 date=$(date +%F:%H:%M:%S)
 script_name=$0
 logfile=/tmp/$script_name-$date.log
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 validate(){
     if [ $? -ne 0 ]
     then
-        echo -e "\e[31m $2 failed..."
+        echo "$2 $R failed... $N"
         exit 1
     else
-        echo -e "\e[32m $2 successful..."
+        echo "$2 $R successful... $N"
     fi
 }
 USERID=$(id -u)
