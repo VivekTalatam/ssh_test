@@ -8,16 +8,16 @@ N="\e[0m"
 validate(){
     if [ $? -ne 0 ]
     then
-        echo "$2 $R failed... $N"
+        echo -e "$2 $R failed... $N"
         exit 1
     else
-        echo "$2 $R successful... $N"
+        echo -e "$2 $R successful... $N"
     fi
 }
 USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
-    echo "ERROR:: Please run this script with sudo permissions"
+    echo -e " $R ERROR:: Please run this script with sudo permissions $N"
     exit 1
 fi
 
