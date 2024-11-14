@@ -18,8 +18,8 @@ then
     exit 1
 fi
 
-yum install https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm -y &>>$LOGFILE
+yum install https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm -y &>>$lofile
 validate $? "Installing MySql"
 
-yum install postfix -y &>>$LOGFILE
+yum install postfix -y &>>$logfile
 validate $? "Installing postfix"
