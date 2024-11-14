@@ -8,17 +8,17 @@ fi
 VALIDATE(){
     if [ $? -ne 0 ]
 then
-    echo "Installation failed..."
+    echo "$2 failed..."
     exit 1
 else
-    echo "Installation successful..."
+    echo "$2 successful..."
 fi
 }
 yum update -y
 yum install https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm -y
-VALIDATE $? "Installing mysql..."
+VALIDATE $? "Installing mysql"
 yum install postfix -y
-VALIDATE $? "Installing postfix..."
+VALIDATE $? "Installing postfix"
 
 
  
