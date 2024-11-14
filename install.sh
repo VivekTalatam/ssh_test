@@ -7,4 +7,11 @@ then
 fi
 yum update -y
 yum install https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+
+if [ $? -ne 0 ]
+then
+    echo "Installation failed..."
+else
+    echo "Installation successful..."
+fi
  
