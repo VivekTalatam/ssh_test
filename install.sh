@@ -5,4 +5,5 @@ then
     echo "Error:: Please run this script with root access"
     exit 1
 fi
+yum update -y
 yum install mysql -y    
