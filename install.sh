@@ -1,6 +1,6 @@
 #!/bin/bash
 DATE=$(date +%F:%H:%M:%S)
-SCRIPt_NAME=$0
+SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 VALIDATE(){
     if [ $? -ne 0 ]
