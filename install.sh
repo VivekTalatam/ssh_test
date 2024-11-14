@@ -6,4 +6,5 @@ then
     exit 1
 fi
 yum update -y
-yum install mysql -y    
+yum install https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+ 
