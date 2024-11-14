@@ -11,7 +11,7 @@ validate(){
         echo -e "$2 $R failed... $N"
         exit 1
     else
-        echo -e "$2 $R successful... $N"
+        echo -e "$2 $G successful... $N"
     fi
 }
 USERID=$(id -u)
