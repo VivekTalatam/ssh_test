@@ -5,10 +5,10 @@ logfile=/tmp/$script_name-$date.log
 validate(){
     if [ $? -ne 0 ]
     then
-        echo "$2 failed..."
+        echo -e "\e[31m $2 failed..."
         exit 1
     else
-        echo "$2 successful..."
+        echo -e "\e[32m $2 successful..."
     fi
 }
 USERID=$(id -u)
