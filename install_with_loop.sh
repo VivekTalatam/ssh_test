@@ -23,6 +23,6 @@ then
 fi
 for i in $@
 do 
-    yum install $i -y
+    yum install $i -y &>> $LOGFILE
     CHECK $? $1 $2
 done
