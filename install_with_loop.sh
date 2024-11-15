@@ -15,7 +15,7 @@ CHECK(){
     fi
 }
 
-user= $(id -u)
+user=$(id -u)
 if [ $user -ne 0 ]
 then
     echo -e " $R ERROR:: Please run the script with sudo permissions $N"
